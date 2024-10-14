@@ -9,7 +9,8 @@ interface
 
 uses Classes,
   CastleVectors, CastleComponentSerialize, CastleCameras,
-  CastleUIControls, CastleControls, CastleKeysMouse;
+  CastleUIControls, CastleControls, CastleKeysMouse, CastleScene,
+  CastleViewport;
 
 type
   { Main view, where most of the application logic takes place. }
@@ -19,6 +20,8 @@ type
       These fields will be automatically initialized at Start. }
     LabelFps: TCastleLabel;
     WalkNavigation1: TCastleWalkNavigation;
+    BoxWin: TCastleBox;
+    Viewport1: TCastleViewport;
   public
     constructor Create(AOwner: TComponent); override;
     procedure Start; override;
@@ -31,7 +34,8 @@ var
 
 implementation
 
-uses SysUtils;
+uses SysUtils,
+  GameViewWin;
 
 { TViewMain ----------------------------------------------------------------- }
 
@@ -53,6 +57,9 @@ begin
   Assert(LabelFps <> nil, 'If you remove LabelFps from the design, remember to remove also the assignment "LabelFps.Caption := ..." from code');
   LabelFps.Caption := 'FPS: ' + Container.Fps.ToString;
   WalkNavigation1.MouseLook := buttonRight in Container.MousePressed;
+
+  if BoxWin.WorldBoundingBox.Contains(Viewport1.Camera.WorldTranslation) then
+    Container.View := ViewWin;
 end;
 
 function TViewMain.Press(const Event: TInputPressRelease): Boolean;

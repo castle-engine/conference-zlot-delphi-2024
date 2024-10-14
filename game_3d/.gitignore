@@ -24,6 +24,7 @@ AndroidSigningProperties.txt
 /game_3d_standalone.exe
 *.res
 *.rsm
+__history
 
 # Blender
 *.blend?

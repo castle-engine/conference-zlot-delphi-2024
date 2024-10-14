@@ -364,6 +364,26 @@
                 "Url" : "castle-data:/sketchfab/throne-of-rock-8de6fa4b9d7e488080828d155891c8f8/scene.gltf"
               }
             ]
+          },
+          {
+            "$$ClassName" : "TCastleBox",
+            "Collides" : false,
+            "Name" : "BoxWin",
+            "RenderOptions" : {
+              "$$ClassName" : "TCastleScene.TSceneRenderOptions"
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 1.8196946382522583E+000,
+              "Y" : 4.0159907341003418E+000,
+              "Z" : 6.0835704803466797E+000
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 2.7203189849853516E+001,
+              "Z" : 1.9978615045547485E+000
+            },
+            "Visible" : false
           }
         ]
       },
@@ -392,16 +412,22 @@
         },
         "RotationPersistent" : {
           "$$ClassName" : "TCastleVector4RotationPersistent",
-          "W" : 1.2393566370010376E+000,
-          "X" : -1.4735873043537140E-001,
-          "Y" : -9.8392128944396973E-001,
-          "Z" : -1.0091830790042877E-001
+          "W" : 2.0166113376617432E+000,
+          "X" : -2.1378381550312042E-001,
+          "Y" : -9.2576748132705688E-001,
+          "Z" : -3.1185093522071838E-001
+        },
+        "ScalePersistent" : {
+          "$$ClassName" : "TCastleVector3Persistent",
+          "X" : 9.9999994039535522E-001,
+          "Y" : 9.9999988079071045E-001,
+          "Z" : 9.9999994039535522E-001
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 2.3471467971801758E+001,
-          "Y" : 2.5539176464080811E+000,
-          "Z" : 3.9012939929962158E+000
+          "X" : 1.4478343963623047E+001,
+          "Y" : 1.1678553581237793E+001,
+          "Z" : -4.1440802812576294E-001
         }
       },
       "InternalDesignNavigations[dnFly]" : {

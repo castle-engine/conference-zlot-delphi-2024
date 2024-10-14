@@ -6,13 +6,17 @@ Slides: https://castle-engine.io/zlot2024
 
 Using [Castle Game Engine](https://castle-engine.io/).
 
-## Credits and License
-
-3D assets:
+## 3D assets credits and licenses
 
 - Dungeon based on https://opengameart.org/content/3d-castle-dungeon-tileset-extended nby [rubberduck](https://opengameart.org/users/rubberduck)
 
     This is in turn using other assets, see `data-source/original_dungeon-tileset-extended/readme.txt` for details.
+
+- Trophy from https://opengameart.org/content/trophy by [JeremyWoods](https://opengameart.org/users/jeremywoods) (license: CC0).
+
+- Multiple [Sketchfab](https://sketchfab.com/features/gltf) models, see `data/sketchfab` for details and links to authors. Licenses are a mix of _Creative Commons Attribution_ and _Creative Commons Attribution NonCommercial_ licenses.
+
+- Skeleton from [Quaternius Pirate Kit](https://quaternius.com/packs/piratekit.html), CC0.
 
 ## Building
 
