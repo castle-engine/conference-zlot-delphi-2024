@@ -414,6 +414,11 @@
               "$$ClassName" : "TCastleScene.TSceneRenderOptions",
               "WholeSceneManifold" : true
             },
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent",
+              "W" : 1.0634045600891113E+000,
+              "Y" : -1.0000004768371582E+000
+            },
             "ScalePersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
               "X" : 2.0000000000000000E+000,
@@ -422,9 +427,9 @@
             },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
-              "X" : 1.2147869110107422E+001,
-              "Y" : 1.2597686052322388E-001,
-              "Z" : -1.5457857847213745E+000
+              "X" : 2.5273704528808594E+001,
+              "Y" : 4.2066484689712524E-001,
+              "Z" : -9.5334672927856445E-001
             },
             "Url" : "castle-data:/skeleton/Characters_Skeleton.gltf",
             "$Behaviors" : [
@@ -450,6 +455,10 @@
                 "MoveSpeed" : 3.0000000000000000E+000,
                 "Name" : "MoveAttack1",
                 "PreferredDistance" : 4.0000000000000000E+000
+              },
+              {
+                "$$ClassName" : "TCastleSoundSource",
+                "Name" : "SoundSource2"
               }
             ]
           },
@@ -468,8 +477,8 @@
             },
             "RotationPersistent" : {
               "$$ClassName" : "TCastleVector4RotationPersistent",
-              "W" : 3.2693059444427490E+000,
-              "Y" : 9.9999958276748657E-001
+              "W" : 2.2500956058502197E+000,
+              "Y" : -9.9999994039535522E-001
             },
             "ScalePersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
@@ -479,9 +488,9 @@
             },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
-              "X" : 1.2318807601928711E+001,
-              "Y" : 1.2597686052322388E-001,
-              "Z" : 5.1474146842956543E+000
+              "X" : 2.5116010665893555E+001,
+              "Y" : 3.2606583833694458E-001,
+              "Z" : 4.5125064849853516E+000
             },
             "Url" : "castle-data:/skeleton/Characters_Skeleton.gltf",
             "$Behaviors" : [
@@ -507,6 +516,10 @@
                 "MoveSpeed" : 3.0000000000000000E+000,
                 "Name" : "MoveAttack2",
                 "PreferredDistance" : 4.0000000000000000E+000
+              },
+              {
+                "$$ClassName" : "TCastleSoundSource",
+                "Name" : "SoundSource1"
               }
             ]
           },
@@ -523,6 +536,11 @@
               "$$ClassName" : "TCastleScene.TSceneRenderOptions",
               "WholeSceneManifold" : true
             },
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent",
+              "W" : 3.0083894729614258E+000,
+              "Y" : -9.9999797344207764E-001
+            },
             "ScalePersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
               "X" : 2.0000000000000000E+000,
@@ -531,9 +549,9 @@
             },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
-              "X" : 5.2395992279052734E+000,
-              "Y" : -3.7021636962890625E-003,
-              "Z" : 3.5432920455932617E+000
+              "X" : 7.4887571334838867E+000,
+              "Y" : 2.9317212104797363E-001,
+              "Z" : 1.8147611618041992E+001
             },
             "Url" : "castle-data:/skeleton/Characters_Skeleton.gltf",
             "$Behaviors" : [
@@ -562,6 +580,128 @@
                 "Enemy" : "PlayerLiving",
                 "MoveSpeed" : 3.0000000000000000E+000,
                 "Name" : "MoveAttack3",
+                "PreferredDistance" : 4.0000000000000000E+000
+              }
+            ]
+          },
+          {
+            "$$ClassName" : "TCastleScene",
+            "AutoAnimation" : "Idle",
+            "Cache" : true,
+            "CollisionSphereRadius" : 2.5000000000000000E-001,
+            "ExposeTransforms" : [
+            ],
+            "Name" : "SceneSkeleton4",
+            "ProcessEvents" : true,
+            "RenderOptions" : {
+              "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+              "WholeSceneManifold" : true
+            },
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent",
+              "W" : 5.9170398712158203E+000,
+              "Y" : -9.9993413686752319E-001
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 2.0000000000000000E+000,
+              "Y" : 2.0000000000000000E+000,
+              "Z" : 2.0000000000000000E+000
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 4.6487221717834473E+000,
+              "Y" : 2.9317212104797363E-001,
+              "Z" : -1.7094728469848633E+001
+            },
+            "Url" : "castle-data:/skeleton/Characters_Skeleton.gltf",
+            "$Behaviors" : [
+              {
+                "$$ClassName" : "TCastleSoundSource",
+                "Name" : "SoundSource4"
+              },
+              {
+                "$$ClassName" : "TCastleLiving",
+                "Name" : "Living4"
+              },
+              {
+                "$$ClassName" : "TCastleMoveAttack",
+                "AnimationAttack" : "Sword",
+                "AnimationDie" : "Death",
+                "AnimationHurt" : "HitReact",
+                "AnimationIdle" : "Idle",
+                "AnimationMove" : "Walk",
+                "AttackDamage" : {
+                  "$$ClassName" : "TCastleDamage",
+                  "DamageConst" : 1.0000000000000000E+001,
+                  "DamageRandom" : 1.0000000000000000E+001
+                },
+                "AttackMaxDistance" : 4.0000000000000000E+000,
+                "AttackTime" : 5.0000000000000000E-001,
+                "Enemy" : "PlayerLiving",
+                "MoveSpeed" : 3.0000000000000000E+000,
+                "Name" : "MoveAttack4",
+                "PreferredDistance" : 4.0000000000000000E+000
+              }
+            ]
+          },
+          {
+            "$$ClassName" : "TCastleScene",
+            "AutoAnimation" : "Idle",
+            "Cache" : true,
+            "CollisionSphereRadius" : 2.5000000000000000E-001,
+            "ExposeTransforms" : [
+            ],
+            "Name" : "SceneSkeleton5",
+            "ProcessEvents" : true,
+            "RenderOptions" : {
+              "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+              "WholeSceneManifold" : true
+            },
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent",
+              "W" : 6.0096788406372070E+000,
+              "Y" : 9.9988424777984619E-001
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 2.0000000000000000E+000,
+              "Y" : 2.0000000000000000E+000,
+              "Z" : 2.0000000000000000E+000
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 1.0198530197143555E+001,
+              "Y" : 2.9317212104797363E-001,
+              "Z" : -1.7132205963134766E+001
+            },
+            "Url" : "castle-data:/skeleton/Characters_Skeleton.gltf",
+            "$Behaviors" : [
+              {
+                "$$ClassName" : "TCastleSoundSource",
+                "Name" : "SoundSource5"
+              },
+              {
+                "$$ClassName" : "TCastleLiving",
+                "Name" : "Living5"
+              },
+              {
+                "$$ClassName" : "TCastleMoveAttack",
+                "AnimationAttack" : "Sword",
+                "AnimationDie" : "Death",
+                "AnimationHurt" : "HitReact",
+                "AnimationIdle" : "Idle",
+                "AnimationMove" : "Walk",
+                "AttackDamage" : {
+                  "$$ClassName" : "TCastleDamage",
+                  "DamageConst" : 1.0000000000000000E+001,
+                  "DamageRandom" : 1.0000000000000000E+001
+                },
+                "AttackMaxDistance" : 4.0000000000000000E+000,
+                "AttackTime" : 5.0000000000000000E-001,
+                "Enemy" : "PlayerLiving",
+                "MoveSpeed" : 3.0000000000000000E+000,
+                "Name" : "MoveAttack5",
                 "PreferredDistance" : 4.0000000000000000E+000
               }
             ]
@@ -597,21 +737,20 @@
         },
         "RotationPersistent" : {
           "$$ClassName" : "TCastleVector4RotationPersistent",
-          "W" : 3.1938085556030273E+000,
-          "X" : 1.1217643506824970E-002,
-          "Y" : 9.2778682708740234E-001,
-          "Z" : 3.7294214963912964E-001
+          "W" : 3.3079683780670166E+000,
+          "X" : 2.8616502881050110E-002,
+          "Y" : 9.4822025299072266E-001,
+          "Z" : 3.1632196903228760E-001
         },
         "ScalePersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "Y" : 1.0000004768371582E+000,
-          "Z" : 1.0000001192092896E+000
+          "Y" : 1.0000002384185791E+000
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 5.4324216842651367E+000,
-          "Y" : 1.0089591026306152E+001,
-          "Z" : -8.5545167922973633E+000
+          "X" : -2.8756666183471680E+000,
+          "Y" : 2.3557636260986328E+001,
+          "Z" : -2.3737140655517578E+001
         }
       },
       "InternalDesignNavigations[dnFly]" : {
