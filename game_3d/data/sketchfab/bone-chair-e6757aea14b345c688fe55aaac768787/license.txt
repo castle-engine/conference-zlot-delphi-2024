@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bone Chair
+* source:	https://sketchfab.com/3d-models/bone-chair-e6757aea14b345c688fe55aaac768787
+* author:	DanielV4 (https://sketchfab.com/DanielV4)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bone Chair" (https://sketchfab.com/3d-models/bone-chair-e6757aea14b345c688fe55aaac768787) by DanielV4 (https://sketchfab.com/DanielV4) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

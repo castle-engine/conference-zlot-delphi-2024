@@ -108,8 +108,8 @@
             "$$ClassName" : "TCastlePointLight",
             "ColorPersistent" : {
               "$$ClassName" : "TCastleColorRGBPersistent",
-              "Blue" : 0.0000000000000000E+000,
-              "Green" : 1.4901961386203766E-001
+              "Blue" : 7.8431375324726105E-002,
+              "Red" : 0.0000000000000000E+000
             },
             "Name" : "PointLight4",
             "TranslationPersistent" : {
@@ -120,18 +120,23 @@
             }
           },
           {
-            "$$ClassName" : "TCastlePointLight",
+            "$$ClassName" : "TCastleSpotLight",
             "ColorPersistent" : {
               "$$ClassName" : "TCastleColorRGBPersistent",
-              "Blue" : 1.9607843458652496E-001,
-              "Red" : 2.4705882370471954E-001
+              "Blue" : 0.0000000000000000E+000,
+              "Green" : 3.1372550874948502E-002
             },
             "Name" : "PointLight5",
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent",
+              "W" : 8.4910720586776733E-001,
+              "X" : -9.9999892711639404E-001
+            },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
               "X" : 7.3233847618103027E+000,
-              "Y" : 3.8520123958587646E+000,
-              "Z" : -1.5082373619079590E+001
+              "Y" : 5.3485598564147949E+000,
+              "Z" : -1.3999052047729492E+001
             }
           },
           {
@@ -150,6 +155,215 @@
               "Z" : 3.1591548919677734E+000
             },
             "Url" : "castle-data:/dungeon_modular_level/level-dungeon.gltf"
+          },
+          {
+            "$$ClassName" : "TCastleScene",
+            "ExposeTransforms" : [
+            ],
+            "Name" : "SceneBarrel1",
+            "RenderOptions" : {
+              "$$ClassName" : "TCastleScene.TSceneRenderOptions"
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 1.0000000149011612E-001,
+              "Y" : 1.0000000149011612E-001,
+              "Z" : 1.0000000149011612E-001
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 2.7174448013305664E+001,
+              "Y" : 1.0040702670812607E-001
+            },
+            "Url" : "castle-data:/sketchfab/barrel-341eecd25e7f4914a6d321e71e5629af/scene.gltf"
+          },
+          {
+            "$$ClassName" : "TCastleScene",
+            "ExposeTransforms" : [
+            ],
+            "Name" : "SceneBarrel2",
+            "RenderOptions" : {
+              "$$ClassName" : "TCastleScene.TSceneRenderOptions"
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 1.0000000149011612E-001,
+              "Y" : 1.0000000149011612E-001,
+              "Z" : 1.0000000149011612E-001
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 2.7174448013305664E+001,
+              "Y" : 8.6917847394943237E-002,
+              "Z" : 4.2875485420227051E+000
+            },
+            "Url" : "castle-data:/sketchfab/barrel-341eecd25e7f4914a6d321e71e5629af/scene.gltf"
+          },
+          {
+            "$$ClassName" : "TCastleScene",
+            "ExposeTransforms" : [
+            ],
+            "Name" : "SceneCobraStatue1",
+            "RenderOptions" : {
+              "$$ClassName" : "TCastleScene.TSceneRenderOptions"
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 2.0000000000000000E+001,
+              "Y" : 2.0000000000000000E+001,
+              "Z" : 2.0000000000000000E+001
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 7.4685754776000977E+000,
+              "Y" : 2.5349935889244080E-001,
+              "Z" : -1.7332448959350586E+001
+            },
+            "Url" : "castle-data:/sketchfab/cobra-statue-528a0cb90bce46928dfb7b3a5e503684/scene.gltf"
+          },
+          {
+            "$$ClassName" : "TCastleTransform",
+            "Name" : "Thrones",
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent",
+              "W" : 1.5509344339370728E+000,
+              "Y" : -9.9999964237213135E-001
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 1.1001942634582520E+001,
+              "Z" : 1.8982765197753906E+001
+            },
+            "$Children" : [
+              {
+                "$$ClassName" : "TCastleScene",
+                "ExposeTransforms" : [
+                ],
+                "Name" : "SceneThroneOfRock1",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.9999997764825821E-003,
+                  "Y" : 9.9999997764825821E-003,
+                  "Z" : 9.9999997764825821E-003
+                },
+                "Url" : "castle-data:/sketchfab/throne-of-rock-8de6fa4b9d7e488080828d155891c8f8/scene.gltf"
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "ExposeTransforms" : [
+                ],
+                "Name" : "SceneThroneOfRock2",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.9999997764825821E-003,
+                  "Y" : 9.9999997764825821E-003,
+                  "Z" : 9.9999997764825821E-003
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 1.8576750755310059E+000
+                },
+                "Url" : "castle-data:/sketchfab/throne-of-rock-8de6fa4b9d7e488080828d155891c8f8/scene.gltf"
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "ExposeTransforms" : [
+                ],
+                "Name" : "SceneThroneOfRock3",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.9999997764825821E-003,
+                  "Y" : 9.9999997764825821E-003,
+                  "Z" : 9.9999997764825821E-003
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 3.8029577732086182E+000
+                },
+                "Url" : "castle-data:/sketchfab/throne-of-rock-8de6fa4b9d7e488080828d155891c8f8/scene.gltf"
+              }
+            ]
+          },
+          {
+            "$$ClassName" : "TCastleTransform",
+            "Name" : "Thrones1",
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent",
+              "W" : 4.7010951042175293E+000,
+              "Y" : -9.9999964237213135E-001
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 3.5095455646514893E+000,
+              "Z" : 2.2728620529174805E+001
+            },
+            "$Children" : [
+              {
+                "$$ClassName" : "TCastleScene",
+                "ExposeTransforms" : [
+                ],
+                "Name" : "SceneThroneOfRock4",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.9999997764825821E-003,
+                  "Y" : 9.9999997764825821E-003,
+                  "Z" : 9.9999997764825821E-003
+                },
+                "Url" : "castle-data:/sketchfab/throne-of-rock-8de6fa4b9d7e488080828d155891c8f8/scene.gltf"
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "ExposeTransforms" : [
+                ],
+                "Name" : "SceneThroneOfRock5",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.9999997764825821E-003,
+                  "Y" : 9.9999997764825821E-003,
+                  "Z" : 9.9999997764825821E-003
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 1.8576750755310059E+000
+                },
+                "Url" : "castle-data:/sketchfab/throne-of-rock-8de6fa4b9d7e488080828d155891c8f8/scene.gltf"
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "ExposeTransforms" : [
+                ],
+                "Name" : "SceneThroneOfRock6",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.9999997764825821E-003,
+                  "Y" : 9.9999997764825821E-003,
+                  "Z" : 9.9999997764825821E-003
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 3.8029577732086182E+000
+                },
+                "Url" : "castle-data:/sketchfab/throne-of-rock-8de6fa4b9d7e488080828d155891c8f8/scene.gltf"
+              }
+            ]
           }
         ]
       },
@@ -178,25 +392,21 @@
         },
         "RotationPersistent" : {
           "$$ClassName" : "TCastleVector4RotationPersistent",
-          "W" : 3.6793918609619141E+000,
-          "X" : 8.3983711898326874E-002,
-          "Y" : 9.5398718118667603E-001,
-          "Z" : 2.8784570097923279E-001
-        },
-        "ScalePersistent" : {
-          "$$ClassName" : "TCastleVector3Persistent",
-          "Y" : 1.0000002384185791E+000
+          "W" : 1.2393566370010376E+000,
+          "X" : -1.4735873043537140E-001,
+          "Y" : -9.8392128944396973E-001,
+          "Z" : -1.0091830790042877E-001
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 6.7607774734497070E+000,
-          "Y" : 3.7025690078735352E+000,
-          "Z" : -1.6924535751342773E+001
+          "X" : 2.3471467971801758E+001,
+          "Y" : 2.5539176464080811E+000,
+          "Z" : 3.9012939929962158E+000
         }
       },
       "InternalDesignNavigations[dnFly]" : {
         "$$ClassName" : "TCastleWalkNavigationDesign",
-        "MoveSpeed" : 1.9952623367309570E+001,
+        "MoveSpeed" : 1.0797751426696777E+001,
         "Name" : ""
       },
       "InternalDesignNavigations[dnExamine]" : {
