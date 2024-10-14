@@ -8,7 +8,7 @@ unit GameViewMain;
 interface
 
 uses Classes,
-  CastleVectors, CastleComponentSerialize,
+  CastleVectors, CastleComponentSerialize, CastleCameras,
   CastleUIControls, CastleControls, CastleKeysMouse;
 
 type
@@ -18,6 +18,7 @@ type
     { Components designed using CGE editor.
       These fields will be automatically initialized at Start. }
     LabelFps: TCastleLabel;
+    WalkNavigation1: TCastleWalkNavigation;
   public
     constructor Create(AOwner: TComponent); override;
     procedure Start; override;
@@ -51,6 +52,7 @@ begin
   { This virtual method is executed every frame (many times per second). }
   Assert(LabelFps <> nil, 'If you remove LabelFps from the design, remember to remove also the assignment "LabelFps.Caption := ..." from code');
   LabelFps.Caption := 'FPS: ' + Container.Fps.ToString;
+  WalkNavigation1.MouseLook := buttonRight in Container.MousePressed;
 end;
 
 function TViewMain.Press(const Event: TInputPressRelease): Boolean;

@@ -19,3 +19,11 @@ castle-auto-generated-resources.res
 
 # May contain secret data (your Android keystore username and password)
 AndroidSigningProperties.txt
+
+# Delphi
+/game_3d_standalone.exe
+*.res
+*.rsm
+
+# Blender
+*.blend?
