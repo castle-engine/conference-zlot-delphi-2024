@@ -10,7 +10,7 @@ interface
 uses Classes,
   CastleVectors, CastleComponentSerialize, CastleCameras,
   CastleUIControls, CastleControls, CastleKeysMouse, CastleScene,
-  CastleViewport;
+  CastleViewport, CastleLivingBehaviors;
 
 type
   { Main view, where most of the application logic takes place. }
@@ -22,6 +22,8 @@ type
     WalkNavigation1: TCastleWalkNavigation;
     BoxWin: TCastleBox;
     Viewport1: TCastleViewport;
+    LabelLife: TCastleLabel;
+    PlayerLiving: TCastleLiving;
   public
     constructor Create(AOwner: TComponent); override;
     procedure Start; override;
@@ -35,6 +37,7 @@ var
 implementation
 
 uses SysUtils,
+  CastleUtils, CastleTransform,
   GameViewWin;
 
 { TViewMain ----------------------------------------------------------------- }
@@ -60,9 +63,15 @@ begin
 
   if BoxWin.WorldBoundingBox.Contains(Viewport1.Camera.WorldTranslation) then
     Container.View := ViewWin;
+
+  LabelLife.Caption := FormatDot('Life: %f', [PlayerLiving.Life]);
 end;
 
 function TViewMain.Press(const Event: TInputPressRelease): Boolean;
+var
+  HitTransform: TCastleTransform;
+  HitLiving: TCastleLiving;
+  HitScene: TCastleScene;
 begin
   Result := inherited;
   if Result then Exit; // allow the ancestor to handle keys
@@ -77,14 +86,31 @@ begin
     not handled in children controls.
   }
 
-  // Use this to handle keys:
-  {
-  if Event.IsKey(keyXxx) then
+  if Event.IsMouseButton(buttonLeft) then
   begin
-    // DoSomething;
-    Exit(true); // key was handled
+    { We clicked on enemy if
+      - MainViewport.TransformHit(...) indicates we hit something
+      - It has a behavior of TCastleLiving.
+      We check usign TransformHit what was hit at the center of the screen.
+      This is consistent with us showing a crosshair in the center of the screen.
+    }
+    HitTransform := Viewport1.TransformHit(Viewport1.RenderRect.Center, true);
+    if (HitTransform <> nil) and
+       (HitTransform.FindBehavior(TCastleLiving) <> nil) then
+    begin
+      HitLiving := HitTransform.FindBehavior(TCastleLiving) as TCastleLiving;
+      HitLiving.Hurt(1000, Viewport1.Camera.WorldDirection);
+      if HitLiving.Dead then
+      begin
+        HitScene := HitTransform as TCastleScene;
+        // dead corpse no longer collides
+        HitScene.Pickable := false;
+        HitScene.Collides := false;
+      end;
+    end;
+
+    Exit(true);
   end;
-  }
 end;
 
 end.
