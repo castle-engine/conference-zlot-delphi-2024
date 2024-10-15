@@ -416,8 +416,8 @@
             },
             "RotationPersistent" : {
               "$$ClassName" : "TCastleVector4RotationPersistent",
-              "W" : 1.0634045600891113E+000,
-              "Y" : -1.0000004768371582E+000
+              "W" : 7.7636355161666870E-001,
+              "Y" : 1.0000002384185791E+000
             },
             "ScalePersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
@@ -427,9 +427,9 @@
             },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
-              "X" : 2.5273704528808594E+001,
-              "Y" : 4.2066484689712524E-001,
-              "Z" : -9.5334672927856445E-001
+              "X" : 2.1256353378295898E+001,
+              "Y" : 6.4290738105773926E-001,
+              "Z" : -8.6241620779037476E-001
             },
             "Url" : "castle-data:/skeleton/Characters_Skeleton.gltf",
             "$Behaviors" : [
@@ -477,8 +477,8 @@
             },
             "RotationPersistent" : {
               "$$ClassName" : "TCastleVector4RotationPersistent",
-              "W" : 2.2500956058502197E+000,
-              "Y" : -9.9999994039535522E-001
+              "W" : 3.8938808441162109E+000,
+              "Y" : -9.9999958276748657E-001
             },
             "ScalePersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
@@ -488,9 +488,9 @@
             },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
-              "X" : 2.5116010665893555E+001,
+              "X" : 2.1423984527587891E+001,
               "Y" : 3.2606583833694458E-001,
-              "Z" : 4.5125064849853516E+000
+              "Z" : 4.6332497596740723E+000
             },
             "Url" : "castle-data:/skeleton/Characters_Skeleton.gltf",
             "$Behaviors" : [
@@ -538,8 +538,8 @@
             },
             "RotationPersistent" : {
               "$$ClassName" : "TCastleVector4RotationPersistent",
-              "W" : 3.0083894729614258E+000,
-              "Y" : -9.9999797344207764E-001
+              "W" : 3.1157073974609375E+000,
+              "Y" : -9.9999791383743286E-001
             },
             "ScalePersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
@@ -549,9 +549,9 @@
             },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
-              "X" : 7.4887571334838867E+000,
+              "X" : 7.4941992759704590E+000,
               "Y" : 2.9317212104797363E-001,
-              "Z" : 1.8147611618041992E+001
+              "Z" : 2.6130886077880859E+001
             },
             "Url" : "castle-data:/skeleton/Characters_Skeleton.gltf",
             "$Behaviors" : [
@@ -705,6 +705,67 @@
                 "PreferredDistance" : 4.0000000000000000E+000
               }
             ]
+          },
+          {
+            "$$ClassName" : "TCastleScene",
+            "AutoAnimation" : "Idle",
+            "Cache" : true,
+            "CollisionSphereRadius" : 2.5000000000000000E-001,
+            "ExposeTransforms" : [
+            ],
+            "Name" : "SceneSkeleton6",
+            "ProcessEvents" : true,
+            "RenderOptions" : {
+              "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+              "WholeSceneManifold" : true
+            },
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent",
+              "W" : 5.0679526329040527E+000,
+              "Y" : 9.9999737739562988E-001
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 2.0000000000000000E+000,
+              "Y" : 2.0000000000000000E+000,
+              "Z" : 2.0000000000000000E+000
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : -6.4086213111877441E+000,
+              "Y" : 2.9317212104797363E-001,
+              "Z" : -3.5778723657131195E-002
+            },
+            "Url" : "castle-data:/skeleton/Characters_Skeleton.gltf",
+            "$Behaviors" : [
+              {
+                "$$ClassName" : "TCastleSoundSource",
+                "Name" : "SoundSource6"
+              },
+              {
+                "$$ClassName" : "TCastleLiving",
+                "Name" : "Living6"
+              },
+              {
+                "$$ClassName" : "TCastleMoveAttack",
+                "AnimationAttack" : "Sword",
+                "AnimationDie" : "Death",
+                "AnimationHurt" : "HitReact",
+                "AnimationIdle" : "Idle",
+                "AnimationMove" : "Walk",
+                "AttackDamage" : {
+                  "$$ClassName" : "TCastleDamage",
+                  "DamageConst" : 1.0000000000000000E+001,
+                  "DamageRandom" : 1.0000000000000000E+001
+                },
+                "AttackMaxDistance" : 4.0000000000000000E+000,
+                "AttackTime" : 5.0000000000000000E-001,
+                "Enemy" : "PlayerLiving",
+                "MoveSpeed" : 3.0000000000000000E+000,
+                "Name" : "MoveAttack6",
+                "PreferredDistance" : 4.0000000000000000E+000
+              }
+            ]
           }
         ]
       },
@@ -737,20 +798,16 @@
         },
         "RotationPersistent" : {
           "$$ClassName" : "TCastleVector4RotationPersistent",
-          "W" : 3.3079683780670166E+000,
-          "X" : 2.8616502881050110E-002,
-          "Y" : 9.4822025299072266E-001,
-          "Z" : 3.1632196903228760E-001
-        },
-        "ScalePersistent" : {
-          "$$ClassName" : "TCastleVector3Persistent",
-          "Y" : 1.0000002384185791E+000
+          "W" : 8.1183826923370361E-001,
+          "X" : -9.9498903751373291E-001,
+          "Y" : -9.2422373592853546E-002,
+          "Z" : -3.8144871592521667E-002
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : -2.8756666183471680E+000,
-          "Y" : 2.3557636260986328E+001,
-          "Z" : -2.3737140655517578E+001
+          "X" : 9.2761335372924805E+000,
+          "Y" : 1.3252084732055664E+001,
+          "Z" : -4.9113860130310059E+000
         }
       },
       "InternalDesignNavigations[dnFly]" : {

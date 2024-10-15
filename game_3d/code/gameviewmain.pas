@@ -62,7 +62,10 @@ begin
   WalkNavigation1.MouseLook := buttonRight in Container.MousePressed;
 
   if BoxWin.WorldBoundingBox.Contains(Viewport1.Camera.WorldTranslation) then
+  begin
     Container.View := ViewWin;
+    Exit; // do not access view stuff that could be freed when stopping view
+  end;
 
   LabelLife.Caption := FormatDot('Life: %f', [PlayerLiving.Life]);
 end;
