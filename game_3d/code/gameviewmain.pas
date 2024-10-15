@@ -38,7 +38,7 @@ implementation
 
 uses SysUtils,
   CastleUtils, CastleTransform,
-  GameViewWin;
+  GameViewWin, GameViewGameOver;
 
 { TViewMain ----------------------------------------------------------------- }
 
@@ -65,6 +65,12 @@ begin
   begin
     Container.View := ViewWin;
     Exit; // do not access view stuff that could be freed when stopping view
+  end;
+
+  if PlayerLiving.Dead then
+  begin
+    Container.View := ViewGameOver;
+    Exit;
   end;
 
   LabelLife.Caption := FormatDot('Life: %f', [PlayerLiving.Life]);
