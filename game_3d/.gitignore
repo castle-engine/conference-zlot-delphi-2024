@@ -12,6 +12,9 @@ castle-engine-output
 /game_3d
 # Windows executable
 /game_3d.exe
+# Executables (Windows, Unix) made when building from Delphi IDE, which doesn't rename to
+/game_3d_standalone.exe
+/game_3d_standalone
 # Library files placed alongside Windows executable
 *.dll
 # Auto-updated by CGE tools when compiling Windows build
@@ -21,10 +24,15 @@ castle-auto-generated-resources.res
 AndroidSigningProperties.txt
 
 # Delphi
-/game_3d_standalone.exe
 *.res
+*.identcache
+# https://docwiki.embarcadero.com/RADStudio/Sydney/en/API_(*.rsm)
 *.rsm
+*.local
+__recovery
 __history
+*.deployproj
+*.delphilsp.json
 
 # Blender
 *.blend?
