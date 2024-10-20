@@ -50,6 +50,8 @@ Until then, you can get engine branch `walk-attack-behavior` using GIT and [comp
 
 ## Screenshots
 
+![Screenshot](screenshots/screenshot.png)
+
 ![Level design in Blender](screenshots/level_blender.png)
 ![Level design in Blender and Castle Game Engine](screenshots/level_blender_cge_1.png)
 ![Level design in Blender and Castle Game Engine](screenshots/level_blender_cge_2.png)
