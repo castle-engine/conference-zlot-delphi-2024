@@ -38,16 +38,6 @@ Do you want to see something more?
 
 - See examples included in the engine, like [examples/creature_behaviors](https://github.com/castle-engine/castle-engine/tree/master/examples/creature_behaviors) and [examples/fps_game](https://github.com/castle-engine/castle-engine/tree/master/examples/fps_game) that show more features, e.g. how to visualize getting hit by "temporary fade to red".
 
-## Note: Requires Castle Game Engine walk-attack-behavior branch (with TCastleMoveAttack)
-
-Temporary note:
-
-To use this, you need a [Castle Game Engine](https://castle-engine.io/) version with `TCastleMoveAttack` component. This is not yet part of the engine _master_ branch, it's a work in progress, available on [walk-attack-behavior branch](https://github.com/castle-engine/castle-engine/tree/walk-attack-behavior).
-
-Watch out [Castle Game Engine news](https://castle-engine.io/wp/) to know when it will be merged!
-
-Until then, you can get engine branch `walk-attack-behavior` using GIT and [compile it yourself](https://castle-engine.io/compiling_from_source.php) if you're brave :) Contact `michalis@castle-engine.io` if you have questions.
-
 ## Screenshots
 
 ![Screenshot](screenshots/screenshot.png)
