@@ -1,4 +1,4 @@
-# Test Game Using Blender, Sketchfab, Quaternius, TCastleMoveAttack
+# Test Game Using Blender, Sketchfab, Quaternius models, TCastleMoveAttack
 
 Demo project for presentation at [Zlot Programistów Delphi 2024](https://www.bsc.com.pl/zlot-programistow-delphi-2024/).
 
@@ -31,6 +31,12 @@ The Pascal code (most in `GameViewMain` unit) adds logic to
 - Show player life (hit points),
 
 - Shoot enemy on mouse click.
+
+Do you want to see something more?
+
+- Follow [Castle Game Engine](https://castle-engine.io/) tutorials and manual.
+
+- See examples included in the engine, like [examples/creature_behaviors](https://github.com/castle-engine/castle-engine/tree/master/examples/creature_behaviors) and [examples/fps_game](https://github.com/castle-engine/castle-engine/tree/master/examples/fps_game) that show more features, e.g. how to visualize getting hit by "temporary fade to red".
 
 ## Note: Requires Castle Game Engine walk-attack-behavior branch (with TCastleMoveAttack)
 
