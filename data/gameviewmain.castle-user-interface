@@ -4,29 +4,6 @@
   "Name" : "RootGroup",
   "$Children" : [
     {
-      "$$ClassName" : "TCastleLabel",
-      "ColorPersistent" : {
-        "$$ClassName" : "TCastleColorPersistent",
-        "Blue" : 1.7647059261798859E-001,
-        "Green" : 6.1176472902297974E-001,
-        "Red" : 9.8823529481887817E-001
-      },
-      "FontSize" : 2.0000000000000000E+001,
-      "HorizontalAnchorParent" : "hpRight",
-      "HorizontalAnchorSelf" : "hpRight",
-      "Name" : "LabelFps",
-      "Text" : [
-        "FPS: xxx"
-      ],
-      "TranslationPersistent" : {
-        "$$ClassName" : "TCastleVector2Persistent",
-        "X" : -2.0000000000000000E+001,
-        "Y" : -2.0000000000000000E+001
-      },
-      "VerticalAnchorParent" : "vpTop",
-      "VerticalAnchorSelf" : "vpTop"
-    },
-    {
       "$$ClassName" : "TCastleViewport",
       "Background" : "Background1",
       "Camera" : "Camera1",
@@ -798,16 +775,22 @@
         },
         "RotationPersistent" : {
           "$$ClassName" : "TCastleVector4RotationPersistent",
-          "W" : 1.5227499008178711E+000,
-          "X" : -8.2958668470382690E-002,
-          "Y" : -9.9350631237030029E-001,
-          "Z" : -7.7866718173027039E-002
+          "W" : 1.3806155920028687E+000,
+          "X" : -2.1322408318519592E-001,
+          "Y" : -9.6246337890625000E-001,
+          "Z" : -1.6792973875999451E-001
+        },
+        "ScalePersistent" : {
+          "$$ClassName" : "TCastleVector3Persistent",
+          "X" : 1.0000001192092896E+000,
+          "Y" : 1.0000001192092896E+000,
+          "Z" : 1.0000001192092896E+000
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : -1.8893388748168945E+001,
-          "Y" : 2.8994877338409424E+000,
-          "Z" : 2.1322956085205078E+000
+          "X" : -1.7695573806762695E+001,
+          "Y" : 4.7488226890563965E+000,
+          "Z" : 1.2989693880081177E+000
         }
       },
       "InternalDesignNavigations[dnFly]" : {
@@ -825,6 +808,29 @@
         "Exists" : false,
         "Name" : ""
       }
+    },
+    {
+      "$$ClassName" : "TCastleLabel",
+      "ColorPersistent" : {
+        "$$ClassName" : "TCastleColorPersistent",
+        "Blue" : 1.7647059261798859E-001,
+        "Green" : 6.1176472902297974E-001,
+        "Red" : 9.8823529481887817E-001
+      },
+      "FontSize" : 2.0000000000000000E+001,
+      "HorizontalAnchorParent" : "hpRight",
+      "HorizontalAnchorSelf" : "hpRight",
+      "Name" : "LabelFps",
+      "Text" : [
+        "FPS: xxx"
+      ],
+      "TranslationPersistent" : {
+        "$$ClassName" : "TCastleVector2Persistent",
+        "X" : -2.0000000000000000E+001,
+        "Y" : -2.0000000000000000E+001
+      },
+      "VerticalAnchorParent" : "vpTop",
+      "VerticalAnchorSelf" : "vpTop"
     },
     {
       "$$ClassName" : "TCastleRectangleControl",
