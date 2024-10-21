@@ -20,6 +20,12 @@ This demonstrates creating a simple 3D FPS game, from start to finish. The level
 
 - `TCastleWalkNavigation` (for ready handling of AWSD and similar keys, typical for FPS games).
 
+Controls:
+
+- Walk using AWSD keys,
+- rotate by holding _right mouse button_ and moving the mouse,
+- shoot by clicking with _left mouse button_.
+
 The Pascal code (most in `GameViewMain` unit) adds logic to
 
 - Activate _mouse look_ when right mouse button is pressed,
